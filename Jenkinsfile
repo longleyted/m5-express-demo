@@ -9,6 +9,7 @@ pipeline {
         stage('Pipeline stage') {
             steps{
                 sh "docker run -d -p 80:80 node-app"
+                shh "echo i am running"
             }
         }
     }
