@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pipeline stage') {
             steps{
-                sh "docker run -d -p 80:80 appcontainer
+                sh "docker run -d -p 80:80 appcontainer"
             }
         }
     }
