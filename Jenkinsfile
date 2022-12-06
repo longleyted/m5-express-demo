@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Pipeline stage') {
             steps{
-                sh "docker run -d -p 80:80 node-app-three"
+                sh "timeout 15s docker run -d -p 80:80 node-app-three"
                 sh "echo i am running"
             }
         }
